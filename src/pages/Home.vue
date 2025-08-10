@@ -1,9 +1,11 @@
 <script setup>
 import About from "@/components/About.vue";
+import Hero from "@/components/Hero.vue";
 </script>
 
 <template>
-  <div class="px-4 py-8">
+  <div class="">
+    <Hero />
     <About />
   </div>
 </template>

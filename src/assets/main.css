@@ -1,5 +1,36 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+  --color-primary: #42b883;
+  --color-primary-dark: #33996c;
+  --color-secondary: #35495e;
+  --color-accent: #ffcc00;
+  --color-background: #f5f5f5;
+  --color-background-dark: #1e1e1e;
+  --color-text: #333333;
+  --color-text-light: #ffffff;
+  /* Shadow ringan ala Vue */
+  --shadow-light-vue: 0 4px 12px rgba(66, 184, 131, 0.25);
+}
 
-@import './base.css';
-* {
-  @apply box-border;
+html {
+  scroll-behavior: smooth;
+}
+
+.link {
+  @apply text-primary hover:text-primary-dark font-bold;
+}
+
+.nav-link::after {
+  content: "";
+  @apply absolute bottom-0 left-1/2 w-0 h-[2px] bg-primary transition-all duration-300 ease-in-out;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover {
+  @apply text-primary;
+}
+
+.nav-link:hover::after {
+  width: 100%;
 }

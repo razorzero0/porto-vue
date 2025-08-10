@@ -1,4 +1,0 @@
-/* ./src/index.css */
-@import "tailwindcss";
-        /* input.css */
-@custom-variant dark (&:where(.dark, .dark *));

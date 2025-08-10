@@ -17,49 +17,47 @@ const toggleDark = () => {
     html.classList.remove("dark");
   }
 };
-
-// Optional: Sync with system preference on mount
-onMounted(() => {
-  if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-    isDark.value = true;
-    document.documentElement.classList.add("dark");
-  }
-});
 </script>
 
 <template>
   <nav class="bg-white dark:bg-gray-900 shadow fixed top-0 left-0 w-full z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16 pl-10">
+      <div class="flex items-center justify-between h-16">
         <!-- Logo kiri -->
         <div class="flex-shrink-0 flex items-center">
-          <div class="text-xl font-bold text-gray-900 dark:text-white">
-            Ainun Porto
+          <div
+            class="text-xl font-bold text-gray-900 dark:text-white cursor-pointer relative"
+          >
+            <p class="nav-link">Ainun Porto</p>
           </div>
         </div>
         <!-- Menu tengah -->
         <div class="hidden md:flex flex-1 justify-center">
           <div class="flex gap-3 space-x-4">
             <a
-              href="#"
-              class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium"
-              >Home</a
+              href="#hero"
+              class="relative text-gray-700 dark:text-gray-200 px-3 py-2 rounded-md text-sm font-medium nav-link"
             >
+              Welcome
+            </a>
+            <a
+              href="#about"
+              class="relative text-gray-700 dark:text-gray-200 px-3 py-2 rounded-md text-sm font-medium nav-link"
+            >
+              About
+            </a>
             <a
               href="#"
-              class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium"
-              >About</a
+              class="relative text-gray-700 dark:text-gray-200 px-3 py-2 rounded-md text-sm font-medium nav-link"
             >
+              Project
+            </a>
             <a
               href="#"
-              class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium"
-              >Projects</a
+              class="relative text-gray-700 dark:text-gray-200 px-3 py-2 rounded-md text-sm font-medium nav-link"
             >
-            <a
-              href="#"
-              class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium"
-              >Experience</a
-            >
+              Experience
+            </a>
           </div>
         </div>
         <!-- Kanan: Toggle dark mode & hamburger -->
@@ -102,7 +100,7 @@ onMounted(() => {
             <button
               @click="toggleMenu"
               type="button"
-              class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+              class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary"
             >
               <svg
                 class="h-6 w-6"
@@ -144,22 +142,22 @@ onMounted(() => {
       <div class="md:hidden" v-if="isOpen">
         <div class="px-2 pt-2 pb-3 space-y-1 flex flex-col items-center">
           <a
-            href="#"
-            class="block text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-base font-medium"
-            >Home</a
+            href="#hero"
+            class="block text-gray-700 dark:text-gray-200 hover:text-primary px-3 py-2 rounded-md text-base font-medium"
+            >Welcome</a
           >
           <a
-            href="#"
-            class="block text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-base font-medium"
+            href="#about"
+            class="block text-gray-700 dark:text-gray-200 hover:text-primary px-3 py-2 rounded-md text-base font-medium"
             >About</a
           ><a
             href="#"
-            class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium"
+            class="text-gray-700 dark:text-gray-200 hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
             >Projects</a
           >
           <a
             href="#"
-            class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium"
+            class="text-gray-700 dark:text-gray-200 hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
             >Experience</a
           >
         </div>
@@ -168,7 +166,7 @@ onMounted(() => {
   </nav>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 /* Animasi transisi slide-fade */
 .slide-fade-enter-active,
 .slide-fade-leave-active {
