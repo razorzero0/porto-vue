@@ -24,7 +24,7 @@ const skills = [
       <!-- Kalimat tambahan di atas -->
       <div class="mb-12 text-center">
         <h2
-          class="text-3xl md:text-5xl font-bold uppercase relative inline-block tracking-widest text-secondary dark:text-slate-50"
+          class="text-3xl md:text-4xl font-bold uppercase relative inline-block tracking-widest text-secondary dark:text-slate-50"
         >
           About Me
         </h2>
@@ -42,17 +42,16 @@ const skills = [
       <div class="grid md:grid-cols-2 gap-12">
         <!-- Kolom 1: About Me -->
         <div class="">
-          <h2 class="text-2xl font-bold mb-4 title">Get to know me!</h2>
+          <h2 class="text-2xl font-bold mb-4 text-primary">Get to know me!</h2>
           <p
             class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4 text-xl"
           >
-            I’m passionate about <span class="font-bold">learning</span> and
-            exploring the world of web development. With experience in both
-            <span class="font-bold">teaching</span> and building projects, I
-            enjoy turning ideas into
-            <span class="font-bold">functional</span> and
-            <span class="font-bold">user-friendly</span> web solutions. I’m
-            always excited to grow my skills and take on new challenges.
+            I’m passionate about <strong>learning</strong> and exploring the
+            world of web development. With experience in both
+            <strong>teaching</strong> and building projects, I enjoy turning
+            ideas into <strong>functional</strong> and
+            <strong>user-friendly</strong> web solutions. I’m always excited to
+            grow my skills and take on new challenges.
           </p>
 
           <p class="leading-relaxed mb-4 text-xl">
@@ -85,7 +84,7 @@ const skills = [
 
         <!-- Kolom 2: My Skills -->
         <div class="">
-          <h2 class="text-2xl font-bold mb-5 sm:text-center title">
+          <h2 class="text-2xl font-bold mb-5 sm:text-center text-primary">
             My Skills
           </h2>
           <div class="grid grid-cols-2 sm:grid-cols-3 gap-5">
