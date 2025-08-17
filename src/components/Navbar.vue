@@ -153,14 +153,14 @@ const toggleDark = () => {
             class="block text-gray-700 dark:text-gray-200 hover:text-primary px-3 py-2 rounded-md text-base font-medium"
             >About</a
           ><a
-            href="#"
+            href="#project"
             class="text-gray-700 dark:text-gray-200 hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
             >Projects</a
           >
           <a
-            href="#"
+            href="#contact"
             class="text-gray-700 dark:text-gray-200 hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
-            >Experience</a
+            >Contact</a
           >
         </div>
       </div>
