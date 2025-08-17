@@ -13,6 +13,33 @@
   --shadow-light-vue: 0 4px 12px rgba(66, 184, 131, 0.25);
 }
 
+/* ukuran scrollbar */
+::-webkit-scrollbar {
+  width: 10px; /* vertikal */
+  height: 10px; /* horizontal */
+}
+
+/* area track (latar belakang scrollbar) */
+.dark ::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+/* area track (latar belakang scrollbar) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* tombol (thumb) */
+::-webkit-scrollbar-thumb {
+  background: #42b883;
+  border-radius: 6px;
+}
+
+/* tombol ketika dihover */
+::-webkit-scrollbar-thumb:hover {
+  background: #33996c;
+}
+
 html {
   scroll-behavior: smooth;
 }

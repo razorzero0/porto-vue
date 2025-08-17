@@ -20,15 +20,17 @@ const toggleDark = () => {
 </script>
 
 <template>
-  <nav class="bg-white dark:bg-gray-900 shadow fixed top-0 left-0 w-full z-50">
+  <nav
+    class="bg-white dark:bg-gray-900 shadow fixed top-0 left-0 w-full z-50 dark:shadow-gray-800"
+  >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <!-- Logo kiri -->
         <div class="flex-shrink-0 flex items-center">
           <div
-            class="text-xl font-bold text-gray-900 dark:text-white cursor-pointer relative"
+            class="text-xl font-mono uppercase font-extrabold cursor-pointer relative text-primary hover:text-primary-dark transition duration-300"
           >
-            <p class="nav-link">Ainun Porto</p>
+            <p class="tracking-wide">Ainun Porto</p>
           </div>
         </div>
         <!-- Menu tengah -->
@@ -47,16 +49,16 @@ const toggleDark = () => {
               About
             </a>
             <a
-              href="#"
+              href="#project"
               class="relative text-gray-700 dark:text-gray-200 px-3 py-2 rounded-md text-sm font-medium nav-link"
             >
               Project
             </a>
             <a
-              href="#"
+              href="#contact"
               class="relative text-gray-700 dark:text-gray-200 px-3 py-2 rounded-md text-sm font-medium nav-link"
             >
-              Experience
+              Contact
             </a>
           </div>
         </div>
