@@ -46,7 +46,7 @@
     <!-- Arrow to top -->
     <button
       @click="scrollToTop"
-      class="absolute -top-5 left-1/2 -translate-x-1/2 w-16 h-16 flex items-center justify-center rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-primary hover:text-white hover:-translate-y-2 transition-all duration-300 cursor-pointer"
+      class="absolute -top-5 left-1/2 -translate-x-1/2 w-16 h-8 md:h-16 flex items-center justify-center rounded-t-full md:rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-primary hover:text-white hover:-translate-y-2 transition-all duration-300 cursor-pointer"
     >
       <i class="fas fa-caret-up text-3xl"></i>
     </button>
